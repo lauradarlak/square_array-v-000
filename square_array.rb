@@ -14,6 +14,15 @@ def square_array(array)
   new_array
 end
 
+# refactor
+def square_array(array)
+  squared = []
+  array.each do |element|
+    squared << element ** 2
+  end
+  squared
+end
+
 # ADVANDED: square array using collect iterator
 def square_array(array)
   array.collect do |number|
